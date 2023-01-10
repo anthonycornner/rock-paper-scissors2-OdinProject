@@ -52,7 +52,7 @@ grab the value of computerSelection from getComputerChoice
 let playRound = (playerSelection, computerSelection) => {
 
     pSelectionVal();
-    
+
     if (playerSelection == "Rock"){
         if(computerSelection == "Rock"){
             console.log("It's a tie, " + playerSelection + " matches " + computerSelection + ".")
@@ -87,14 +87,10 @@ let playRound = (playerSelection, computerSelection) => {
 
 }
 
-
+const playerSelection = pSelectionVal();
+const computerSelection = getComputerChoice();
 
 let game = (rounds) => {
-    const playerSelection = pSelectionVal();
-    const computerSelection = getComputerChoice();
-    
-    
-    let remainingRounds = rounds;
 
     for (let i = 0; i <= rounds; i++){
         
